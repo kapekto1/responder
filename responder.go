@@ -6,8 +6,12 @@ import (
 )
 
 func main() {
-	name, _ := os.Hostname()
+	fmt.Println("Hostname:", Respond())
+}
 
-	fmt.Println("Hostname:", name)
+
+func Respond() (string) {
+	name, _ := os.Hostname()
+	return name
 }
 
